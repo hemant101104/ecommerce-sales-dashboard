@@ -117,24 +117,87 @@ avg_order_value = total_sales / total_orders
 st.markdown("""
 <style>
 
-.main {
-    background-color: #F7F8FC;
+/* Main App Background */
+.stApp {
+    background-color: #0E1117;
+    color: #FAFAFA;
 }
 
-div[data-testid="metric-container"] {
-    background-color: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 12px rgba(0,0,0,0.08);
-    border: 1px solid #f0f0f0;
-}
-
+/* Sidebar */
 section[data-testid="stSidebar"] {
-    background-color: #FFFFFF;
+    background-color: #161B22;
+    border-right: 1px solid #30363D;
 }
 
+/* Sidebar Text */
+section[data-testid="stSidebar"] * {
+    color: #E6EDF3 !important;
+}
+
+/* Sidebar Filter Labels */
+label {
+    color: #C9D1D9 !important;
+    font-weight: 500;
+}
+
+/* Metric Cards */
+div[data-testid="metric-container"] {
+    background-color: #161B22;
+    border: 1px solid #30363D;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.25);
+}
+
+/* Metric Value */
+div[data-testid="metric-container"] > label {
+    color: #8B949E !important;
+}
+
+/* Main Headers */
 h1, h2, h3 {
-    color: #2E3A59;
+    color: #F0F6FC !important;
+}
+
+/* Horizontal Line */
+hr {
+    border-color: #30363D;
+}
+
+/* Chart Containers */
+[data-testid="stPlotlyChart"] {
+    background-color: #161B22;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #30363D;
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"] {
+    border: 1px solid #30363D;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Multiselect */
+div[data-baseweb="select"] {
+    background-color: #161B22 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #30363D;
+    border-radius: 10px;
+}
+
+/* Remove White Blocks */
+.block-container {
+    padding-top: 2rem;
+    background-color: #0E1117;
 }
 
 </style>
